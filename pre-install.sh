@@ -1,3 +1,15 @@
+pre_install(){
+
+	echo '[*] start apt update...'
+	echo ' '
+
+	sudo apt update
+	sudo apt install make
+}
+pre_install
+
+
+
 pre_config(){
 
 	git config --global user.name "cbot918"
@@ -14,15 +26,11 @@ fi
 	
 	echo ' '
 	echo '[*] pre-install finish'
-	echo '[*] please  $ source ~/.bashrc'
+	echo '[*] todo:'
+	echo '[*] $ source ~/.bashrc'
 }
 pre_config
 
 
 
-pre_install(){
 
-	sudo apt update
-	sudo apt install make
-}
-pre_install
