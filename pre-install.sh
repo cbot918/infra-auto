@@ -3,11 +3,15 @@ pre_config(){
 	git config --global user.name "cbot918"
 	git config --global user.email "cbot918@gmail.com"
 
-	echo '
-	if [ -f ~/.yale/.bash_yale ]; then
-			. ~/.yale/.bash_yale
-	fi
-	' >> ~/.bashrc
+	echo 
+'if [ -f ~/.yale/.bash_yale ]; then
+. ~/.yale/.bash_yale
+fi
+' 
+>> ~/.bashrc
+
+	echo 'alias sou="source ~/.bashrc"' >> ~/.bashrc
+
 	source ~/.bashrc
 
 }
