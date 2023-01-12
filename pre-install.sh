@@ -16,19 +16,27 @@ pre_install
 
 pre_config(){
 
+	# vim
+	echo 'set tabstop=2
+set shiftwidth=2
+set autoindent
+'>> ~/.vimrc
+
+	# git
 	git config --global user.name "cbot918"
 	git config --global user.email "cbot918@gmail.com"
 
-echo 'if [ -f ~/.yale/.bash_yale ]; then
+	# .bashrc
+	echo 'if [ -f ~/.yale/.bash_yale ]; then
 . ~/.yale/.bash_yale
 fi
 ' >> ~/.bashrc
 
 	echo 'alias sou="source ~/.bashrc"' >> ~/.bashrc
 
+	# finish
 	git config --list
-	
-	
+		
 	echo ' '
 	echo 'pre-install finish'
 	echo '-'
