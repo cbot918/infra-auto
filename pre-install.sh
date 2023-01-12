@@ -9,7 +9,7 @@ pre_install(){
 	echo ' '
 
 	sudo apt update
-	sudo apt install make
+	sudo apt install git vim make curl -y
 }
 pre_install
 
@@ -27,28 +27,28 @@ set autoindent
 	git config --global user.name "cbot918"
 	git config --global user.email "cbot918@gmail.com"
 
-	# .bashrc
+	# bash config
+	cp -r src/.yale ~/
 	echo 'if [ -f ~/.yale/.bash_yale ]; then
 . ~/.yale/.bash_yale
 fi
 ' >> ~/.bashrc
-
 	echo 'alias sou="source ~/.bashrc"' >> ~/.bashrc
 
 	# finish
 	git config --list
-		
 	echo ' '
 	echo 'pre-install finish'
 	echo '-'
 	echo 'todo:'
 	echo -e "${GREEN}$ source ~/.bashrc"
+
 }
 pre_config
 
 
 # bash: .yale
 bash_config_install(){
-    cp -r .yale ~/
+    
 }
 bash_config_install
