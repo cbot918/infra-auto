@@ -17,11 +17,12 @@ NODE_VERSION="16.19.0"
 install_nvm(){
     # pre-install: nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    source ~/.bashrc
+    
     ## $ nvm current
     ## $ nvm ls-remote
     ## $ nvm install 
 
+    echo '-'
     echo 'nvm installed'
     echo '-'
     echo 'todo:'

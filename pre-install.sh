@@ -25,9 +25,10 @@ fi
 	git config --list
 	
 	echo ' '
-	echo '[*] pre-install finish'
-	echo '[*] todo:'
-	echo '[*] $ source ~/.bashrc'
+	echo 'pre-install finish'
+	echo '-'
+	echo 'todo:'
+	echo '$ source ~/.bashrc'
 }
 pre_config
 
