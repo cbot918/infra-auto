@@ -1,3 +1,7 @@
+
+GREEN='\033[1;32m' 
+NC='\033[0m' # No Color
+
 pre_install(){
 
 	echo '[*] start apt update...'
@@ -24,14 +28,11 @@ fi
 
 	git config --list
 	
+	
 	echo ' '
 	echo 'pre-install finish'
 	echo '-'
 	echo 'todo:'
-	echo '$ source ~/.bashrc'
+	echo -e "${GREEN}$ source ~/.bashrc"
 }
 pre_config
-
-
-
-
