@@ -2,6 +2,7 @@
 GREEN='\033[1;32m' 
 NC='\033[0m' # No Color
 
+# pre-install
 pre_install(){
 
 	echo '[*] start apt update...'
@@ -13,7 +14,7 @@ pre_install(){
 pre_install
 
 
-
+# pre-config
 pre_config(){
 
 	# vim
@@ -44,3 +45,10 @@ fi
 	echo -e "${GREEN}$ source ~/.bashrc"
 }
 pre_config
+
+
+# bash: .yale
+bash_config_install(){
+    cp -r .yale ~/
+}
+bash_config_install
