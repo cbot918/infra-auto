@@ -14,6 +14,7 @@ install_go
 
 # nodejs 
 NODE_VERSION="16.19.0"
+GREEN='\033[1;32m'
 install_nvm(){
     # pre-install: nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
@@ -26,10 +27,10 @@ install_nvm(){
     echo 'nvm installed'
     echo '-'
     echo 'todo:'
-    echo '$ source ~/.bashrc'
-    echo '$ nvm install 16'
-    echo '$ nvm use 16'
-    echo '$ node --version'
+    echo -e "${GREEN}$ source ~/.bashrc"
+    echo -e "${GREEN}$ nvm install 16"
+    echo -e "${GREEN}$ nvm use 16"
+    echo -e "${GREEN}$ node --version"
 
 }
 install_nvm
