@@ -1,7 +1,6 @@
-#ok
 init-vm:
-	./basetool-install.sh
-	./cbash-config-install.sh
+	./tool-install.sh
+	./bash-config-install.sh
 	./lang-install.sh
 
 
@@ -12,3 +11,6 @@ init-minikube:
 init-dock:
 	echo "ToBeImpl"
 
+
+test:
+	./test-test.sh

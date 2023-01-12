@@ -1,6 +1,6 @@
 # golang
 BINARY="go1.19.5.linux-amd64.tar.gz"
-install-go(){
+install_go(){
     curl -OL "https://go.dev/dl/$BINARY"
     sudo rm -rf /usr/local/go
     sudo tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
@@ -10,11 +10,11 @@ install-go(){
     echo "[*] auto check go-version"
     go version
 }
-install-go
+install_go
 
 # nodejs 
 NODE_VERSION="16.19.0"
-install-node(){
+install_node(){
     # pre-install: nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     echo "[*] auto check nvm-version"
@@ -30,20 +30,20 @@ install-node(){
     echo "[*] auto check node-version"
     node --version
 }
-install-node
+install_node
 
 
 
 # # python3
-# install-py(){
+# install_py(){
 #     # python3 is default installed
 #     sudo apt install python3-pip
 # }
-# install-py
+# install_py
 
 
 
-# install-ruby(){
+# install_ruby(){
 #     echo skip-install-ruby
 # }
-# install-ruby
+# install_ruby
