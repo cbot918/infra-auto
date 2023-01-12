@@ -12,15 +12,15 @@ a infra automation tool
 
 1. create vm
 ```
-$ multipass launch --name infra-auto
+multipass launch --name infra-auto
 ```
 2. list vm ( this step is ignorable )
 ```
-$ multipass list 
+multipass list 
 ```
 3. ssh in vm ( should be in ubuntu@infra-auto )
 ```
-$ multipass shell infra-auto
+multipass shell infra-auto
 ```
 
 
@@ -28,7 +28,7 @@ $ multipass shell infra-auto
 
 1. get repo
 ```
-$ sudo apt install git && git clone https://github.com/cbot918/infra-auto
+sudo apt install git && git clone https://github.com/cbot918/infra-auto
 ```
 2. pre-install: wrap below
 
@@ -40,7 +40,7 @@ $ sudo apt install git && git clone https://github.com/cbot918/infra-auto
 
 (4). bash config
 ```
-$ cd infra-auto && ./pre-install.sh
+cd infra-auto && ./pre-install.sh
 ``` 
 3. formal install vm
 
@@ -48,6 +48,6 @@ $ cd infra-auto && ./pre-install.sh
 
 (2). install language( go / node )
 ```
-$ make init-vm
+make init-vm
 ```
 
