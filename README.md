@@ -10,5 +10,6 @@ current support: Linux Ubuntu 20
 
 ## usage
 ```
-$ init-vm
+$ sudo apt install make
+$ make init-vm
 ```
