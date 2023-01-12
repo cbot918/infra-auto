@@ -14,24 +14,28 @@ install_go
 
 # nodejs 
 NODE_VERSION="16.19.0"
-install_node(){
+install_nvm(){
     # pre-install: nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    echo "[*] auto check nvm-version"
     source ~/.bashrc
-    nvm --version
     ## $ nvm current
     ## $ nvm ls-remote
     ## $ nvm install 
 
-    # install: node
-    nvm install $NODE_VERSION
-    nvm use $NODE_VERSION
-    echo "[*] auto check node-version"
-    node --version
 }
-install_node
+install_nvm
 
+#install_node(){
+#    source ~/.bashrc
+#    echo "[*] auto check nvm-version"
+#    nvm --version
+#     # install: node
+#    nvm install $NODE_VERSION
+#    nvm use $NODE_VERSION
+#    echo "[*] auto check node-version"
+#    node --version
+#}
+#install_node
 
 
 # # python3
