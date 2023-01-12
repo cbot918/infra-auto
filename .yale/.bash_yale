@@ -1,11 +1,16 @@
 
 
-
+## multipass
+remu(){
+    multipass delete infra-auto
+    multipass purge
+    multipass launch --name infra-auto
+    multipass shell infra-auto
+}
 
 
 
 ## git
-
 gpush(){
     git add .
     git commit -m $1
@@ -22,14 +27,13 @@ gpush(){
 
 
 ## network
-
 listp(){
 	netstat -nao | findstr :$1
 }
-
 killp(){
 	taskkill /PID $1 /F
 }
+
 
 
 
