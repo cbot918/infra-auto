@@ -12,8 +12,11 @@ fi
 
 	echo 'alias sou="source ~/.bashrc"' >> ~/.bashrc
 
-	source ~/.bashrc
-
+	git config --list
+	
+	echo ' '
+	echo '[*] pre-install finish'
+	echo '[*] please  $ source ~/.bashrc'
 }
 pre_config
 

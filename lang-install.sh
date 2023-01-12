@@ -22,6 +22,14 @@ install_nvm(){
     ## $ nvm ls-remote
     ## $ nvm install 
 
+    echo 'nvm installed'
+    echo '-'
+    echo 'todo:'
+    echo '$ source ~/.bashrc'
+    echo '$ nvm install 16'
+    echo '$ nvm use 16'
+    echo '$ node --version'
+
 }
 install_nvm
 
