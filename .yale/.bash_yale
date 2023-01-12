@@ -4,17 +4,20 @@
 
 
 
-##git
-alias gcbot='git config --global user.name "cbot918" && git config --global user.email "cbot918@gmail.com"'
-alias gnode='git config --global user.name "nodev918" && git config --global user.email "nodev918@gmail.com"'
+## git
 
-
-push_nodev918(){
-    cd ..
-    tar -cvf ppage.tar ppage
-    sudo docker cp ppage.tar git:/app
-    cd ppage
+gpush(){
+    git add .
+    git commit -m $1
+    git push
 }
+
+# push_nodev918(){
+#     cd ..
+#     tar -cvf ppage.tar ppage
+#     sudo docker cp ppage.tar git:/app
+#     cd ppage
+# }
 
 
 
