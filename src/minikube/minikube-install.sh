@@ -1,5 +1,8 @@
 minikube_install(){
-    minikube
+    # virtualbox
+		sudo apt install virtualbox
+
+		# minikube
     curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     sudo install minikube-linux-amd64 /usr/local/bin/minikube
     echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
@@ -10,8 +13,8 @@ minikube_install(){
     sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
     rm kubectl
 
-    # echo 'alias mini="minikube "' >> ~/.bashrc
-    # echo 'alias kubc="kubectl "' >> ~/.bashrc
+    echo 'alias mini="minikube "' >> ~/.bashrc
+    echo 'alias kubc="kubectl "' >> ~/.bashrc
 
     echo ''
     echo '-'
