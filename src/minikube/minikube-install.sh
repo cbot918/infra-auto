@@ -1,6 +1,6 @@
 minikube_install(){
     # virtualbox
-		sudo apt install virtualbox -y
+		sudo apt install virtualbox virtualbox-ext-pack -y
 
 		# minikube
     curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
