@@ -45,10 +45,3 @@ fi
 
 }
 pre_config
-
-
-# bash: .yale
-bash_config_install(){
-    
-}
-bash_config_install
