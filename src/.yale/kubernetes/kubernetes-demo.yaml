@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: kubernetes-demo-pod
+  labels:
+    app: demoApp
+spec:
+  containers:
+    - name: kubernetes-demo-container
+      image: ex_webi
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 5056
