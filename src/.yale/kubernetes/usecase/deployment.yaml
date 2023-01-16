@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: test-pod-label
+    spec:
+      containers:
+        - name: test-deployment-container
+          image: exwebi
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5057
+  selector:
+    matchLabels:
+      app: test-pod-label
