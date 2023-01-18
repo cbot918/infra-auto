@@ -45,3 +45,8 @@ fi
 
 }
 pre_config
+
+export_bashrc(){
+	echo "export PATH=$PATH:$HOME/go/bin" >> $HOME/.bashrc
+}
+export_bashrc
