@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  cassandra:
+    build:
+      context: ./
+    container_name: cassandra
+    restart: always
+    ports:
+      - "9042:9042"
+    environment:
+      # - CASSANDRA_KEYSPACE=cassandra
+      - CASSANDRA_USERNAME=cassandra
+      - CASSANDRA_PASSWORD=cassandra
