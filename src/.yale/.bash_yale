@@ -1,4 +1,4 @@
-
+alias gcca="gcc-aarch64-linux-gnu "
 
 ## multipass
 remu(){
@@ -11,7 +11,19 @@ remu(){
 
 
 ## git
-gpush(){
+gitc(){
+	git clone https://github.com/cbot918/$1
+}
+
+gitfet(){
+  git init
+	git remote add origin https://github.com/cbot918/$1
+	git fetch
+	git checkout -b main origin/main
+	git remote -v
+}
+
+gitp(){
     git add .
     git commit -m $1
     git push
