@@ -1,0 +1,6 @@
+[main 10a996d] edit
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 nvim
+ rename src/.yale/{vim => nvim}/README.md (100%)
+ rename src/.yale/{vim => nvim}/init.vim (100%)
+ rename src/.yale/{vim => nvim}/nvim.sh (100%)
