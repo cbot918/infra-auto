@@ -3,7 +3,7 @@ dev-env:
 	./src/dev-env/lang-install.sh
 
 c:
-
+	./src/dev-env/c-install.sh
 
 init-mini:
 	./src/minikube/minikube-install.sh
