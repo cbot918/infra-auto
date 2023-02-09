@@ -1,11 +1,33 @@
 alias gcca="aarch64-linux-gnu-gcc "
 
+
+## bash
+bashe(){
+	vim ~/coding/cbot918/infra-auto/src/.yale/.bash_yale
+}
+
+bashs(){
+	cp ~/coding/cbot918/infra-auto/src/.yale/.bash_yale ~/.yale/.bash_yale
+}
+
+
 ## multipass
 remu(){
     multipass delete infra-auto
     multipass purge
     multipass launch --name infra-auto
     multipass shell infra-auto
+}
+
+
+## tmux
+
+tl(){
+	tmux list-sessions
+}
+
+ta(){
+	tmux attach -t $1
 }
 
 
