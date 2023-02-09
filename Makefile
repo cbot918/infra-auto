@@ -15,7 +15,7 @@ init-mini:
 	./src/minikube/minikube-install.sh
 
 
-.PHONY: dev-env c init-mini
+.PHONY: dev-env c init-mini c arm kernel
 
 # init-dock:
 # 	echo "ToBeImpl"
