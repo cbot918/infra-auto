@@ -1,4 +1,4 @@
-alias gcca="gcc-aarch64-linux-gnu "
+alias gcca="aarch64-linux-gnu-gcc "
 
 ## multipass
 remu(){
