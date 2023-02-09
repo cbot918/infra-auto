@@ -1,4 +1,5 @@
 alias gcca="aarch64-linux-gnu-gcc "
+alias qem="qemu-system-aarch64 "
 
 
 ## bash

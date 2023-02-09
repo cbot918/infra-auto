@@ -8,6 +8,9 @@ c:
 arm:
 	./src/dev-env/arm-install.sh
 
+kernel:
+	./src/dev-env/buildk.sh
+
 init-mini:
 	./src/minikube/minikube-install.sh
 
