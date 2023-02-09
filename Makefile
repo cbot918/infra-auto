@@ -5,6 +5,9 @@ dev-env:
 c:
 	./src/dev-env/c-install.sh
 
+arm:
+	./src/dev-env/arm-install.sh
+
 init-mini:
 	./src/minikube/minikube-install.sh
 
