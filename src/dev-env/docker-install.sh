@@ -22,5 +22,7 @@ docker_install(){
 		sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
     sudo docker run hello-world
+
+		sudo gpasswd -a $USEr docker
 }
 docker_install
