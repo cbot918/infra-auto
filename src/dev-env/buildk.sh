@@ -8,7 +8,6 @@ fetchk
 
 buildk(){
 	cp $FPATH/kernel_run.sh $BPATH
-	$BPATH/kernel_run.sh
 	echo "
 $ cd runninglinuxkernel_5.0
 $ kernel_run.sh
