@@ -8,7 +8,7 @@ alias yale='cd /mnt/c/Users/yale'
 alias va='/mnt/c/HashiCorp/Vagrant/bin/vagrant.exe '
 alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
 
-# alias vsc='/c/Users/yale/AppData/Local/Programs/Microsoft VS Code/bin/code'
+alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code '
 
 # sed -i 's/\r//g' xxx.sh
 # git config --global push.default matching
