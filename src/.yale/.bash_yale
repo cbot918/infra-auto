@@ -1,15 +1,42 @@
+alias testt="echo test"
+
+alias mini="minikube "
+alias kubc="kubectl "
+alias dc="docker-compose "
+
+alias yale='cd /mnt/c/Users/yale'
+alias va='/mnt/c/HashiCorp/Vagrant/bin/vagrant.exe '
+alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
+alias sou='source /home/yale918/.bashrc'
+
 # sed -i 's/\r//g' xxx.sh
 
-# if [ -f ~/.yale/.bash_yale ]; then
-# . ~/.yale/.bash_yale
-# fi
-
+# git config --global push.default matching
 
 alias gcca="aarch64-linux-gnu-gcc "
 alias qem="qemu-system-aarch64 "
 
 
+
+
+## config
+seed(){
+    sed -i 's/\r//g' $1
+}
+souy(){
+    . /mnt/c/Users/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale
+}
+
 ## bash
+#win
+
+bashew(){
+    vim /mnt/c/Users/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale
+}
+bashsw(){
+    cp /mnt/c/Users/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale ~/.yale/.bash_yale
+    sed -i 's/\r//g' ~/.yale/.bash_yale
+}
 bashe(){
 	vim ~/coding/cbot918/infra-auto/src/.yale/.bash_yale
 }
@@ -137,3 +164,10 @@ pi(){
 ubu(){
 	sudo docker run -it --name ubuntu ubuntu bash
 }
+
+
+if [ -f ~/.yale/.bash_yale ]; then
+. ~/.yale/.bash_yale
+fi
+
+alias sou="source ~/.bashrc"
