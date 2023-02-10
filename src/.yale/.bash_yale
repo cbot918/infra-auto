@@ -7,15 +7,15 @@ alias dc="docker-compose "
 alias yale='cd /mnt/c/Users/yale'
 alias va='/mnt/c/HashiCorp/Vagrant/bin/vagrant.exe '
 alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
-alias sou='source /home/yale918/.bashrc'
+
+# alias vsc='/c/Users/yale/AppData/Local/Programs/Microsoft VS Code/bin/code'
 
 # sed -i 's/\r//g' xxx.sh
-
 # git config --global push.default matching
+# it config --global core.autocrlf true
 
 alias gcca="aarch64-linux-gnu-gcc "
 alias qem="qemu-system-aarch64 "
-
 
 
 
@@ -166,8 +166,8 @@ ubu(){
 }
 
 
-if [ -f ~/.yale/.bash_yale ]; then
-. ~/.yale/.bash_yale
-fi
+# if [ -f ~/.yale/.bash_yale ]; then
+# . ~/.yale/.bash_yale
+# fi
 
 alias sou="source ~/.bashrc"
