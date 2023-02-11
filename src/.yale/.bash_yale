@@ -12,7 +12,7 @@ alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code
 
 # sed -i 's/\r//g' xxx.sh
 # git config --global push.default matching
-# it config --global core.autocrlf true
+# git config --global core.autocrlf true
 # sudo service docker start
 
 alias gcca="aarch64-linux-gnu-gcc "
@@ -75,6 +75,10 @@ td(){
 ## git
 gitc(){
 	git clone https://github.com/cbot918/$1
+}
+
+gitcb(){
+	git clone -b $2 https://github.com/cbot918/$1
 }
 
 gitfet(){
