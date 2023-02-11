@@ -1,0 +1,7 @@
+FROM alpine
+
+WORKDIR /app
+
+RUN apk update && apk add --no-cache git openssh-keygen openssh
+RUN git config --global user.email "cblt918@gmail.com" && git config --global user.name "cbot918"
+RUN ssh-keygen -t rsa -b 4096 -C "cbot918@gmail.com" -f $HOME/.ssh/git_cbot918

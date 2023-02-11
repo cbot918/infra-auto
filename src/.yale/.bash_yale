@@ -13,6 +13,7 @@ alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code
 # sed -i 's/\r//g' xxx.sh
 # git config --global push.default matching
 # it config --global core.autocrlf true
+# sudo service docker start
 
 alias gcca="aarch64-linux-gnu-gcc "
 alias qem="qemu-system-aarch64 "
@@ -46,6 +47,8 @@ bashs(){
 }
 
 
+
+
 ## multipass
 remu(){
     multipass delete infra-auto
@@ -65,7 +68,9 @@ ta(){
 	tmux attach -t $1
 }
 
-
+td(){
+	tmux kill-session -t $1
+}
 
 ## git
 gitc(){
@@ -157,6 +162,13 @@ ubuo(){
 }
 
 #quick instance
+god(){
+    docker run -it --name god cbot918/ubugo bash 
+}
+dshba(){
+  docker start $1 && docker exec -it $1 bash
+}
+
 pi(){
 	sudo docker run -it --name alpine alpine sh
 }
@@ -171,3 +183,5 @@ ubu(){
 # fi
 
 alias sou="source ~/.bashrc"
+
+

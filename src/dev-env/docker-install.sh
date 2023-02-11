@@ -23,6 +23,6 @@ docker_install(){
 
     sudo docker run hello-world
 
-		sudo gpasswd -a $USEr docker
+		sudo gpasswd -a $USER docker
 }
 docker_install
