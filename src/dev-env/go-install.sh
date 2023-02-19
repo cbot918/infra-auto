@@ -9,7 +9,8 @@ install_go(){
     echo "export PATH=\$PATH:\$HOME/go/bin" >> $HOME/.bashrc
     echo "export PATH=\$PATH:/usr/local/go/bin" >> $HOME/.bashrc
     . $HOME/.bashrc
-    echo "[*] auto check go-version"
-    go version
+    /usr/local/go/bin/go version
+    echo " "
+    echo "source ~/.bashrc"
 }
 install_go
