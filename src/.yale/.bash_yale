@@ -18,7 +18,9 @@ alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code
 alias gcca="aarch64-linux-gnu-gcc "
 alias qem="qemu-system-aarch64 "
 
-
+# export PATH=$PATH:/c/Program\ Files/GitHub\ CLI/gh
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:/mnt/c/HashiCorp/Vagrant/bin/vagrant
 
 ## config
 seed(){
