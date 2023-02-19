@@ -37,11 +37,15 @@ node(){
 }
 # install_nvm
 
+log_error(){
+    echo $1
+}
 
 case "$1" in
     "") ;;
     go) "$@"; exit;;
     node) "$@"; exit;;
+    *) log_error "Unkown function: $1()"; exit 2;;
     # *) log_error "Unkown function: $1()"; exit 2;;
 esac
 
