@@ -4,11 +4,11 @@ docker:
 	./src/dev-env/docker-install.sh
 
 go:
-	./src/dev-env/lang-install.sh go
+	./src/dev-env/go.sh
 
 node:
-	./src/dev-env/lang-install.sh node
-	
+	./src/dev-env/node.sh
+
 c:
 	./src/dev-env/c-install.sh
 
