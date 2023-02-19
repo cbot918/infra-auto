@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-    postgres:
+    db:
         image: postgres:13.2-alpine
         restart: always
         environment:
@@ -25,4 +25,6 @@ services:
             - pgadmin-data:/var/lib/pgadmin
         links:
             - "db:pgsql-server"
-
+volumes:
+    db-data:
+    pgadmin-data:
