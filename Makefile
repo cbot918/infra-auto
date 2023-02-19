@@ -1,6 +1,6 @@
 
 
-install-docker:
+docker-install:
 	./src/dev-env/docker-install.sh
 
 go-install:
