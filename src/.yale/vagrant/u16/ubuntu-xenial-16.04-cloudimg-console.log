@@ -647,4 +647,8 @@ See 'systemctl status vagrant.mount' for details.
 
 Ubuntu 16.04.7 LTS ubuntu-xenial ttyS0
 
-ubuntu-xenial login: 
+ubuntu-xenial login: [ 3626.789882] INFO: rcu_sched self-detected stall on CPU[ 3626.792094] INFO: rcu_sched detected stalls on CPUs/tasks:[ 3626.792096] 	1-...: (1 GPs behind) idle=949/140000000000001/0 softirq=24345/24346 fqs=0 
+[ 3626.792096] 	[ 3626.792129] rcu_sched kthread starved for 17583 jiffies! g15378 c15377 f0x0 s3 ->state=0x1
+
+[ 3626.796283] 	1-...: (1 GPs behind) idle=949/140000000000001/0 softirq=24345/24346 fqs=1 
+[ 3626.796283] 	 (t=17583 jiffies g=15378 c=15377 q=41)

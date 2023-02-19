@@ -1,5 +1,9 @@
 version: "3.7"
 
+networks:
+  authy:
+    driver: bridge
+
 services:
   postgres:
     image: postgres:13.2-alpine
@@ -11,9 +15,13 @@ services:
       PGDATA: /var/lib/postgresql/data
     volumes:
       - db-data:/var/lib/postgresql/data
-    network_mode: host
+    networks:
+      - authy
     ports:
       - "5433:5432"
+
+
+
 
 
   # pgadmin:
