@@ -3,11 +3,11 @@
 install-docker:
 	./src/dev-env/docker-install.sh
 
-install-go:
-	./src/dev-env/install-go.sh
+go-install:
+	./src/dev-env/go-install.sh
 
-install-node:
-	./src/dev-env/install-node.sh
+node-install:
+	./src/dev-env/node-install.sh
 
 c:
 	./src/dev-env/c-install.sh
