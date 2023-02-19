@@ -1,6 +1,8 @@
+
+
 # golang
 BINARY="go1.19.5.linux-amd64.tar.gz"
-install_go(){
+go(){
     curl -OL "https://go.dev/dl/$BINARY"
     sudo rm -rf /usr/local/go
     sudo tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
@@ -10,12 +12,12 @@ install_go(){
     echo "[*] auto check go-version"
     go version
 }
-install_go
+# install_go
 
 # nodejs 
 NODE_VERSION="16.19.0"
 GREEN='\033[1;32m'
-install_nvm(){
+node(){
     # pre-install: nvm
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     
@@ -33,7 +35,15 @@ install_nvm(){
     echo -e "${GREEN}$ node --version"
 
 }
-install_nvm
+# install_nvm
+
+
+case "$1" in
+    "") ;;
+    test1) "$@"; exit;;
+    test2) "$@"; exit;;
+    *) log_error "Unkown function: $1()"; exit 2;;
+esac
 
 #install_node(){
 #    source ~/.bashrc

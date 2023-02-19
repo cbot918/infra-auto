@@ -1,7 +1,14 @@
-dev-env:
-	./src/dev-env/docker-install.sh
-	./src/dev-env/lang-install.sh
 
+
+docker:
+	./src/dev-env/docker-install.sh
+
+go:
+	./src/dev-env/lang-install.sh go
+
+node:
+	./src/dev-env/lang-install.sh node
+	
 c:
 	./src/dev-env/c-install.sh
 
