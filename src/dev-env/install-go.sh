@@ -1,6 +1,6 @@
 # golang
 BINARY="go1.19.5.linux-amd64.tar.gz"
-go(){
+install_go(){
     curl -OL "https://go.dev/dl/$BINARY"
     sudo rm -rf /usr/local/go
     sudo tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
@@ -10,4 +10,4 @@ go(){
     echo "[*] auto check go-version"
     go version
 }
-go
+install_go
