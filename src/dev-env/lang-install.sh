@@ -40,9 +40,9 @@ node(){
 
 case "$1" in
     "") ;;
-    test1) "$@"; exit;;
-    test2) "$@"; exit;;
-    *) log_error "Unkown function: $1()"; exit 2;;
+    go) "$@"; exit;;
+    node) "$@"; exit;;
+    # *) log_error "Unkown function: $1()"; exit 2;;
 esac
 
 #install_node(){
