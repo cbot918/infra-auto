@@ -107,13 +107,19 @@ gitp(){
 
 
 ## network
-listp(){
+listpw(){
 	netstat -nao | findstr :$1
 }
-killp(){
+killpw(){
 	taskkill /PID $1 /F
 }
 
+listp(){
+	sudo lsof -t -i:$1 -s TCP:LISTEN
+}
+killp(){
+	sudo kill -9 $1
+}
 
 
 
