@@ -22,6 +22,11 @@ alias qem="qemu-system-aarch64 "
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/mnt/c/HashiCorp/Vagrant/bin/vagrant
 
+## svelte
+svelte_init(){
+	npx degit sveltejs/template .
+}
+
 ## config
 seed(){
     sed -i 's/\r//g' $1
