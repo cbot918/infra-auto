@@ -1,0 +1,10 @@
+Host u16
+  HostName 127.0.0.1
+  User vagrant
+  Port 2200
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile C:/Users/yale/coding/cbot918/infra-auto/src/.yale/vagrant/u16/.vagrant/machines/u16/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
