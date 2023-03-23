@@ -4,7 +4,7 @@ alias kubc="kubectl "
 alias dc="docker-compose "
 
 alias yale='cd /mnt/c/Users/yale'
-alias va='/mnt/c/HashiCorp/Vagrant/bin/vagrant.exe '
+alias va='vagrant '
 alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
 
 alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code '
@@ -43,6 +43,17 @@ souy(){
 
 ## bash
 #win
+
+souu(){
+    source /home/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale
+}
+
+bashel(){
+    vim /home/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale
+}
+bashsl(){
+    cp /home/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale ~/.yale/.bash_yale
+}
 
 bashew(){
     vim /mnt/c/Users/yale/coding/cbot918/infra-auto/src/.yale/.bash_yale

@@ -6,6 +6,9 @@ docker-install:
 go-install:
 	./src/dev-env/go-install.sh
 
+rust-install:
+	./src/dev-env/rust-install.sh
+
 node-install:
 	./src/dev-env/node-install.sh
 
