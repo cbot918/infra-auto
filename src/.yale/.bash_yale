@@ -3,6 +3,7 @@ alias mini="minikube "
 alias kubc="kubectl "
 alias dc="docker-compose "
 
+alias kc='kubectl '
 alias yale='cd /mnt/c/Users/yale'
 alias va='vagrant '
 alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
@@ -22,6 +23,14 @@ export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/mnt/c/HashiCorp/Vagrant/bin/vagrant
 
 
+
+## k8s
+kcur(){
+	kubectl run curl --image=curlimages/curl -it -- sh
+}
+akcur(){
+	kubectl attach curl -c curl -i -t
+}
 
 ## nasm
 nas(){
