@@ -24,6 +24,34 @@ export PATH=$PATH:/mnt/c/HashiCorp/Vagrant/bin/vagrant
 
 
 
+
+## linux
+lp(){
+	sudo lsof -t -i:$1
+}
+
+kp(){
+	sudo kill -9 $(sudo lsof -t -i:$1)
+}
+
+ctag(){
+  ctags -R .
+	echo "todo:"
+	echo ":set tags=tags"
+}
+
+listens(){
+	sudo lsof -i -P -n | grep LISTEN
+}
+
+tcps(){
+	netstat -ant | wc -l
+}
+
+udps(){
+	netstat -aut | wc -l
+}
+
 ## k8s
 kcur(){
 	kubectl run curl --image=curlimages/curl -it -- sh
