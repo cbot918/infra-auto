@@ -1,1 +1,1 @@
-{}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/yale/coding/cbot918/infra-auto/src/.yale/vagrant/u20","disabled":false,"__vagrantfile":true}}}
