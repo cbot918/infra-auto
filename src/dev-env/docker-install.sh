@@ -2,6 +2,9 @@ docker_install(){
     # sudo apt install build-essential
     #sudo apt install docker.io -y
 
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    
     sudo apt-get update
     sudo apt-get install \
     ca-certificates \

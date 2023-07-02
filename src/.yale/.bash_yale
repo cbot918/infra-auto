@@ -2,9 +2,10 @@ alias dn="dotnet "
 alias mini="minikube "
 alias kubc="kubectl "
 alias dc="docker-compose "
-alias and="/usr/local/android-studio/bin/studio.sh"
+alias as="/usr/local/android-studio/bin/studio.sh"
 alias idea="/usr/local/idea-IC-231.9011.34/bin/idea.sh &"
-
+alias kt="kotlinc"
+alias co="cockroach"
 
 # bins
 alias kc='kubectl '
@@ -15,6 +16,7 @@ alias con='/mnt/c/yaleProgram/ConEmuPack.221218/ConEmu64.exe'
 alias vsc='/mnt/c/Users/yale/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code '
 alias postman='/usr/local/Postman/Postman &'
 
+alias beekeeper='/usr/local/beekeeper/Beekeeper-Studio-3.9.17.AppImage'
 
 
 # sed -i 's/\r//g' xxx.sh
@@ -29,6 +31,7 @@ alias qem="qemu-system-aarch64 "
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/mnt/c/HashiCorp/Vagrant/bin/vagrant
 export PATH=$PATH:/usr/local/apache-maven-3.6.3/bin
+export PATH=$PATH:/usr/local/nsq-1.2.1/bin
 
 # export JAVA_HOME="/usr/lib/jvm/usr/lib/jvm/jdk-13.0.2"
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
