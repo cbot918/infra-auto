@@ -38,12 +38,12 @@ kubectl run hi \
 ```
 kubectl apply -f ingress.yaml
 ```
-到這邊就都架好了
 
 5. cluster ip 做成domain name
 ```
 echo $(docker container inspect ingress-control-plane --format '{{ .NetworkSettings.Networks.kind.IPAddress }}') hello.yale.com >> /etc/hosts
 ```
+到這邊就都架好了
 
 6. 測試
 ```
