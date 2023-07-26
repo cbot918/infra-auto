@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello
+spec:
+  rules:
+    - host: hello.yale.com
+      http:
+        paths:
+          - path: /hi
+            pathType: Prefix
+            backend:
+              service:
+                name: hi
+                port:
+                  number: 3334
+          # - pathType: ImplementationSpecific
+          # - path: /api
+          #   pathType: Prefix
+          #   backend:
+          #     service:
+          #       name: hello1
+          #       port:
+          #         number: 80
+
