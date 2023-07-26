@@ -13,7 +13,7 @@
 kind create cluster --name ingress --config kind-with-ingress.yaml 
 ```
 
-2. install ingress-nginx to cluster
+2. apply ingress-nginx to cluster
 ```
 kubectl apply --filename https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
 ```
@@ -34,7 +34,7 @@ kubectl run hi \
   --port 3334
 ```
 
-4. setup ingress
+4. apply ingress
 ```
 kubectl apply -f ingress.yaml
 ```
