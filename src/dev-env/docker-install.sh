@@ -4,7 +4,8 @@ docker_install(){
 
     sudo groupadd docker
     sudo usermod -aG docker $USER
-    
+    newgrp docker
+
     sudo apt-get update
     sudo apt-get install \
     ca-certificates \

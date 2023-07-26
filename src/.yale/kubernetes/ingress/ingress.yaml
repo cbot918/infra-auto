@@ -1,18 +1,15 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: web
+  name: hello
 spec:
   rules:
-    - host: blue.demo.com
+    - host: hello.yale.com
       http:
         paths:
-          - backend:
-              serviceName: blue-service
-              servicePort: 80
-    - host: purple.demo.com
-      http:
-        paths:
-          - backend:
-              serviceName: purple-service
-              servicePort: 80
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: hello
+                port:
+                  number: 80

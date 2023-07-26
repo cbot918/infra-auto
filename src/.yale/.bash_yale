@@ -2,10 +2,11 @@ alias dn="dotnet "
 alias mini="minikube "
 alias kubc="kubectl "
 alias dc="docker-compose "
-alias as="/usr/local/android-studio/bin/studio.sh"
+# alias as="/usr/local/android-studio/bin/studio.sh"
 alias idea="/usr/local/idea-IC-231.9011.34/bin/idea.sh &"
 alias kt="kotlinc"
 alias co="cockroach"
+alias gl="goctl"
 
 # bins
 alias kc='kubectl '
