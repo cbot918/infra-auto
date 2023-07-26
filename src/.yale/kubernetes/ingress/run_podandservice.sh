@@ -1,4 +1,4 @@
-kubectl run hello \
+kubectl run hi \
   --expose \
-  --image nginxdemos/hello:plain-text \
-  --port 80
+  --image cbot918/hi \
+  --port 3334
