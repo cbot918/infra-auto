@@ -39,6 +39,7 @@ kubectl run hi \
 kubectl apply -f ingress.yaml
 ```
 到這邊就都架好了
+
 5. 測試
 ```
 curl hello.yale.com/hi
