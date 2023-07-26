@@ -1,7 +1,7 @@
 # kind-ingress template
 
 ## Requirements
-1. [kind](https://kubernetes.io/docs/tasks/tools/): k8s client
+1. [kubectl](https://kubernetes.io/docs/tasks/tools/): k8s client
 2. [kind](https://kind.sigs.k8s.io/): k8s cluster
 2. [zbpack](https://github.com/zeabur/zbpack) (choice): 只是拿來快速製作image的工具, 範例有現成的這個可以跳過, 也可以寫dockerfile製作
 
