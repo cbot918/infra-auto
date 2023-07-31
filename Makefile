@@ -6,6 +6,9 @@ docker-install:
 go-install:
 	./src/dev-env/go-install.sh
 
+riscv-install:
+	./src/dev-env/riscv-install.sh
+
 rust-install:
 	./src/dev-env/rust-install.sh
 

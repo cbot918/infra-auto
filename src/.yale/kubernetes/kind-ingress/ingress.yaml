@@ -14,6 +14,13 @@ spec:
                 name: hi
                 port:
                   number: 3334
+          - path: /hello
+            pathType: Prefix
+            backend:
+              service:
+                name: hello
+                port:
+                  number: 3333
           # - pathType: ImplementationSpecific
           # - path: /api
           #   pathType: Prefix

@@ -1,0 +1,1 @@
+sudo apt-get install gcc-riscv64-unknown-elf -y

@@ -10,7 +10,7 @@
 ## Steps
 1. create a kind-cluster with ingress feature
 ```
-kind create cluster --name ingress --config kind-with-ingress.yaml 
+kind create cluster --name ingress --config kind_cluster_with_ingress.yaml 
 ```
 
 2. apply ingress-nginx to cluster
