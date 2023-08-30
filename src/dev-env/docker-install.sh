@@ -1,11 +1,6 @@
 docker_install(){
     # sudo apt install build-essential
     #sudo apt install docker.io -y
-
-    sudo groupadd docker
-    sudo usermod -aG docker $USER
-    newgrp docker
-
     sudo apt-get update
     sudo apt-get install \
     ca-certificates \
@@ -22,10 +17,13 @@ docker_install(){
 
     sudo apt-get update
 		sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-    sudo docker run hello-world
 		sudo gpasswd -a $USER docker
     sudo curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    newgrp docker
 }
 docker_install
