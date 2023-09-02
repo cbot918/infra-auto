@@ -1,3 +1,8 @@
+alias u20="cd ~/coding/cbot918/infra-auto/src/.yale/vagrant/u20"
+
+
+
+
 alias dn="dotnet "
 alias mini="minikube "
 alias kubc="kubectl "
