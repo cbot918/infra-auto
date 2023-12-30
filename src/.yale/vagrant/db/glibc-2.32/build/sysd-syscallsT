@@ -1,0 +1,11 @@
+
+#### DIRECTORY = ../sysdeps/unix/sysv/linux/x86_64
+#### SYSDIRS = ../sysdeps/unix/sysv/linux/x86_64/64
+
+#### CALL=arch_prctl NUMBER=- ARGS=i:ii SOURCE=-
+unix-stub-syscalls += __arch_prctl arch_prctl
+
+#### CALL=modify_ldt NUMBER=- ARGS=i:ipi SOURCE=-
+unix-stub-syscalls += __modify_ldt modify_ldt
+
+#### CALL=syscall_clock_gettime NUMBER=- ARGS=i:ip SOURCE=-

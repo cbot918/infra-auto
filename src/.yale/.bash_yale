@@ -1,7 +1,15 @@
+alias composer="php /usr/local/bin/composer"
+
+export PATH="$HOME/.symfony5/bin:$PATH"
+alias sym="symfony "
+alias httpie="/usr/local/bin/HTTPie-2023.3.6.AppImage "
+alias gova="cd /home/yale/coding/cbot918/infra-auto/src/.yale/vagrant"
+
+
 alias u20="cd ~/coding/cbot918/infra-auto/src/.yale/vagrant/u20"
-
-
-
+alias go12="/usr/local/go12/bin/go "
+alias zb="zeabur "
+alias spg="sponge "
 
 alias dn="dotnet "
 alias mini="minikube "
@@ -40,7 +48,8 @@ export PATH=$PATH:/usr/local/apache-maven-3.6.3/bin
 export PATH=$PATH:/usr/local/nsq-1.2.1/bin
 
 # export JAVA_HOME="/usr/lib/jvm/usr/lib/jvm/jdk-13.0.2"
-export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+# export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/jdk-17.0.9"
 export PATH=$JAVA_HOME/bin:$PATH
 
 
@@ -273,5 +282,10 @@ ubu(){
 # fi
 
 alias sou="source ~/.bashrc"
+
+
+function lsix() { 
+  montage -tile 7x1 -label %f -background black -fill white "$@" gif:- | convert - -colors 16 sixel:-; 
+}
 
 
